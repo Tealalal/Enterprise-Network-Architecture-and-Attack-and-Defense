@@ -1,33 +1,36 @@
 # Enterprise-Network-Architecture-and-Attack-and-Defense
-Enterprise Network Architecture and Attack and Defense
-[toc]
-
 
 # 一、云网络环境设计与搭建
 
 ## 拓扑结构
 
 安全版本的拓扑结构如下：
-![](https://s3.hedgedoc.org/demo/uploads/ace16bec-ec65-4f43-978a-340a14f841f4.jpg)
+![ace16bec-ec65-4f43-978a-340a14f841f4](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/6747f362-0d6d-46ad-82d0-ae60d052bee2)
 
 ## 不同区域的连接
 OpenWrt+ZeroTier
-![](https://s3.hedgedoc.org/demo/uploads/678d552d-62cc-43f1-8055-a3fcc2e114b5.png)
+![](https://s3.hedgedoc.org/demo/uploads/678d552d-62cc-43f1-8055-![678d552d-62cc-43f1-8055-a3fcc2e114b5](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d1ba4727-855e-4b5d-a7e6-ee920dfc664f)
+a3fcc2e114b5.png)
 
 ![](https://s3.hedgedoc.org/demo/uploads/405ff339-9af9-4834-9d23-a688ba63951d.png)
 
-![](https://s3.hedgedoc.org/demo/uploads/2beb477b-d95f-4e3b-b99e-11c4c2c5d72e.png)
+
+<img width="684" alt="2beb477b-d95f-4e3b-b99e-11c4c2c5d72e" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7f84134d-bab4-4644-8c2b-5ab6c33f5c9e">
 
 网络拓扑补充
-![](https://s3.hedgedoc.org/demo/uploads/50b6bd5b-4e22-4078-9424-4fd370bc29b5.png)
+![](https://s3.hedgedoc.org/demo/<img width="446" alt="50b6bd5b-4e22-4078-9424-4fd370bc29b5" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d5bb5c58-9bfd-44b3-b2f8-7ecd8a701b46">
+uploads/50b6bd5b-4e22-4078-9424-4fd370bc29b5.png)
 
-![](https://s3.hedgedoc.org/demo/uploads/88b3f838-db5d-4261-87d3-774c8e357a83.png)
+
+<img width="437" alt="88b3f838-db5d-4261-87d3-774c8e357a83" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/36a31848-b177-407a-aa4a-8fba35fcb716">
 
 内部网络访问结果
-![](https://s3.hedgedoc.org/demo/uploads/55ce52da-3301-415d-a08a-fae44287d977.png)
+
+<img width="494" alt="55ce52da-3301-415d-a08a-fae44287d977" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/0ff986ce-1290-4fe0-8871-f591895a464f">
 
 外部网络访问结果
-![](https://s3.hedgedoc.org/demo/uploads/69625372-b317-48d8-a724-c6b31c42569c.png)
+
+<img width="444" alt="69625372-b317-48d8-a724-c6b31c42569c" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/9996dc56-ce1b-4dae-a84e-4ecd90d5c0c9">
 
 
 
