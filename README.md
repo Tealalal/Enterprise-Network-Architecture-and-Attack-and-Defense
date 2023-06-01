@@ -9,17 +9,17 @@
 
 ## 不同区域的连接
 OpenWrt+ZeroTier
-![](https://s3.hedgedoc.org/demo/uploads/678d552d-62cc-43f1-8055-![678d552d-62cc-43f1-8055-a3fcc2e114b5](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d1ba4727-855e-4b5d-a7e6-ee920dfc664f)
+![678d552d-62cc-43f1-8055-a3fcc2e114b5](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d1ba4727-855e-4b5d-a7e6-ee920dfc664f)
 a3fcc2e114b5.png)
 
-![](https://s3.hedgedoc.org/demo/uploads/405ff339-9af9-4834-9d23-a688ba63951d.png)
 
+![405ff339-9af9-4834-9d23-a688ba63951d](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/97bd7f62-b940-4ffe-ba9c-c1edb9e631b8)
 
 <img width="684" alt="2beb477b-d95f-4e3b-b99e-11c4c2c5d72e" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7f84134d-bab4-4644-8c2b-5ab6c33f5c9e">
 
 网络拓扑补充
-![](https://s3.hedgedoc.org/demo/<img width="446" alt="50b6bd5b-4e22-4078-9424-4fd370bc29b5" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d5bb5c58-9bfd-44b3-b2f8-7ecd8a701b46">
-uploads/50b6bd5b-4e22-4078-9424-4fd370bc29b5.png)
+<img width="446" alt="50b6bd5b-4e22-4078-9424-4fd370bc29b5" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/d5bb5c58-9bfd-44b3-b2f8-7ecd8a701b46">
+
 
 
 <img width="437" alt="88b3f838-db5d-4261-87d3-774c8e357a83" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/36a31848-b177-407a-aa4a-8fba35fcb716">
