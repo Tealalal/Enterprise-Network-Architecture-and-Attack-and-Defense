@@ -916,20 +916,22 @@ Nmap扫描域控
 
 ### 主机发现和端口扫描
 
-![](https://s3.hedgedoc.org/demo/uploads/41aeead0-77c9-4276-998d-8a4f69de11c5.png)
+
+<img width="585" alt="41aeead0-77c9-4276-998d-8a4f69de11c5" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/811e4c2b-1647-41ee-8510-c6c059fc7149">
 
 ```
 nmap -sP ip
 ```
-![](https://s3.hedgedoc.org/demo/uploads/18470eee-6d4f-4c9d-80bd-8f813dbf8bfc.png)
+
+<img width="419" alt="18470eee-6d4f-4c9d-80bd-8f813dbf8bfc" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/1b0bf086-b429-4b7e-ae91-f7b586aee2f4">
 
 
 ```
 arp-scan -l
 ```
-![](https://s3.hedgedoc.org/demo/uploads/cb01fb7c-08c1-43a0-b220-d3501bc6dcbf.png)
+<img width="493" alt="cb01fb7c-08c1-43a0-b220-d3501bc6dcbf" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7e5156fd-e6f3-4ea8-89db-5736fa8468a6">
 
-![](https://s3.hedgedoc.org/demo/uploads/73eef4d8-9f9c-4b41-95d8-43027a23091e.png)
+<img width="555" alt="73eef4d8-9f9c-4b41-95d8-43027a23091e" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/810f9dae-8181-4366-8e60-13a79ad32737">
 
 ```
 nmap -p 1-65535 -A ip
@@ -940,8 +942,8 @@ nmap -p 1-65535 -A ip
 
 先从80端口入手
 访问网站的80端口，查看页面源代码，没有重要信息
+<img width="345" alt="29a38174-c0fd-4213-85e9-f3e153f6454f" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/9ac208d9-37dc-473c-9e0c-2dc1bda8bb59">
 
-![](https://s3.hedgedoc.org/demo/uploads/29a38174-c0fd-4213-85e9-f3e153f6454f.png)
 
 ```扫描目录的方法：
 御剑
@@ -958,18 +960,23 @@ web目录字典
 ```
 
 上述扫描中扫出很多目录，可以知道这个网站框架是wordpress
-![](https://s3.hedgedoc.org/demo/uploads/d4741685-9052-47f2-a8d3-ed8cb7102c61.png)
+
+<img width="437" alt="d4741685-9052-47f2-a8d3-ed8cb7102c61" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/33ec562b-1baf-4abc-8530-3717f44e32fb">
+
 “我现在在最低层 而他在web最高处,我们可以发现dirb普通扫描并没有给我们带来很多有价值的东西”
 
 深入扫描txt，php，zip文件
 
-![](https://s3.hedgedoc.org/demo/uploads/d9fcafa1-9bc2-4b85-98e5-db6a64a7c322.png)
+<img width="396" alt="d9fcafa1-9bc2-4b85-98e5-db6a64a7c322" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/fc0d544c-735a-4786-8cbd-145762945ece">
 
-![](https://s3.hedgedoc.org/demo/uploads/ce0e3eb1-921d-4d77-afa4-7247dcd775be.png)
+<img width="345" alt="ce0e3eb1-921d-4d77-afa4-7247dcd775be" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/373629ef-3e1b-4e00-88ab-3b69b06b6b54">
+
+
 发现了image.php  index.php   secret,txt三个文件
 
 访问文本文件
-![](https://s3.hedgedoc.org/demo/uploads/4f2f5369-670f-4b86-9b51-3c9137419310.png)
+
+<img width="437" alt="4f2f5369-670f-4b86-9b51-3c9137419310" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/4c8af8ca-8150-4c34-aff1-63a145fe0792">
 
 可能两个php文件后有参数
 
@@ -994,39 +1001,44 @@ fuzz是模糊测试的一种手段
   压力测试，看看网站能不能扛得住
   ```
 用kali自带的wfuzz对index.php进行fuzz测试找参数
-![](https://s3.hedgedoc.org/demo/uploads/1c9cfd97-c258-477f-9f48-d7e9d037d05f.png)
+
+<img width="560" alt="1c9cfd97-c258-477f-9f48-d7e9d037d05f" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/18949350-5853-47f4-838a-a4fc48d1d0de">
 
 ### FUZZ和LFI
 
 过滤单词数
-![](https://s3.hedgedoc.org/demo/uploads/5337f439-1700-471b-a1aa-cdc7f2edbceb.png)
+
+<img width="560" alt="5337f439-1700-471b-a1aa-cdc7f2edbceb" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/30a2be6d-45c1-45d0-b3ba-8f1803941861">
 
 地址后+?file=
 
 这个接口是来访问文件的
 LFI本地文件包含漏洞
-![](https://s3.hedgedoc.org/demo/uploads/9496b2d8-ae0c-41b2-8a7b-4c89fcfa28ed.png)
+<img width="305" alt="9496b2d8-ae0c-41b2-8a7b-4c89fcfa28ed" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/b30a89c4-f6f2-44ee-978f-e5f2519e292e">
 
 在浏览器输入http://192.168.213.163/index.php?file=location.txt有回显
-![](https://s3.hedgedoc.org/demo/uploads/df347310-db65-40c8-bb8b-b18b4d915669.png)
+
+<img width="450" alt="df347310-db65-40c8-bb8b-b18b4d915669" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/3f0d67ef-e6e1-4003-9384-117bf0c6f0be">
 
 用secrettier360在别的php文件使用
 直接访问image.php文件
 
-![](https://s3.hedgedoc.org/demo/uploads/16e22bbf-7548-4b27-9a54-71cd7829841b.png)
+
+<img width="369" alt="16e22bbf-7548-4b27-9a54-71cd7829841b" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/91561252-7db6-4701-ad0e-a41234693b66">
 
 参数对了还需要文件名
 ubuntu常见的敏感文件/etc/passwd
 
-![](https://s3.hedgedoc.org/demo/uploads/ec403443-2a63-47c6-afc8-b03020049b86.png)
+<img width="289" alt="ec403443-2a63-47c6-afc8-b03020049b86" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/ea5790aa-a3c5-4e7d-9e95-72aafcd62bb2">
 
 用kali的curl工具查看
 
-![](https://s3.hedgedoc.org/demo/uploads/dd773da8-eca0-4830-a2c8-c1622831bb6a.png)
+<img width="491" alt="dd773da8-eca0-4830-a2c8-c1622831bb6a" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/2558f01f-db25-4cda-9d69-834ce567a68a">
 
 找到了saket用户下一个可疑文件password.txt
+<img width="446" alt="8eb52081-6c1c-4a53-8255-18d093aab702" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/2cb40021-6f91-4e9d-a57e-2ce0a0df1585">
 
-![](https://s3.hedgedoc.org/demo/uploads/8eb52081-6c1c-4a53-8255-18d093aab702.png)
+
 follow_the_ippsec不知道是哪里的密码
 
 测试后不是ssh密码，也不是直接的登录密码
@@ -1035,10 +1047,11 @@ follow_the_ippsec不知道是哪里的密码
 
 ### WordPress漏洞扫描
 主页
-![](https://s3.hedgedoc.org/demo/uploads/f6b92386-133c-4e64-ae14-f3ce780c199b.png)
+
+<img width="504" alt="f6b92386-133c-4e64-ae14-f3ce780c199b" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/708db79d-3cbb-4aff-9ba9-b2dacabfb07b">
 
 这里有管理员发的第一篇文章
-![](https://s3.hedgedoc.org/demo/uploads/01d061ad-5953-411a-b98d-31bca6c90a66.png)
+<img width="321" alt="01d061ad-5953-411a-b98d-31bca6c90a66" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/26a531bf-fbaf-4738-ba9d-59861256cb3c">
 
 试试把author换一下，没有效果
 
@@ -1049,41 +1062,44 @@ follow_the_ippsec不知道是哪里的密码
 只有victor一个用户
 结合前面获得的密码登录了后台
 
-![](https://s3.hedgedoc.org/demo/uploads/3f56a7df-fe78-4557-9883-f0423a7f992c.png)
+<img width="569" alt="3f56a7df-fe78-4557-9883-f0423a7f992c" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/ab44eebb-a7b2-4ff5-84e6-4d7418c8bb7f">
 
-![](https://s3.hedgedoc.org/demo/uploads/bb4fd873-7a36-46c2-936a-5a7c2f023e9a.png)
+<img width="445" alt="bb4fd873-7a36-46c2-936a-5a7c2f023e9a" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/da13eaab-c67c-4eb8-982a-25d5bb146f2a">
 
-![](https://s3.hedgedoc.org/demo/uploads/65fd0a7c-4f9e-471e-8cd7-468febb1ceef.png)
+<img width="493" alt="65fd0a7c-4f9e-471e-8cd7-468febb1ceef" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/634ed3c3-79ef-4188-9ca0-3a409a735613">
 
 到了后台，想到一句话木马
 wordpress里面有一个主题编辑器
 
-![](https://s3.hedgedoc.org/demo/uploads/af354997-3add-4704-981b-6c051454aefd.png)
+<img width="325" alt="af354997-3add-4704-981b-6c051454aefd" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/0f7255aa-f12f-4fdb-822b-f90dd926affd">
 
-![](https://s3.hedgedoc.org/demo/uploads/7e2e1010-8f6c-4f3d-85f4-d4255a41dee3.png)
+<img width="361" alt="7e2e1010-8f6c-4f3d-85f4-d4255a41dee3" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/82750d9d-ddc7-46f4-8982-26a453c3a15f">
 
 找到一个可以编辑的php文件
-![](https://s3.hedgedoc.org/demo/uploads/dcad6b43-1237-48fe-b11a-e1c670ddcef9.png)
+
+<img width="531" alt="dcad6b43-1237-48fe-b11a-e1c670ddcef9" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/c48bef52-acbe-4d35-a2d4-545dedb791fe">
 
 写入一句话木马或者访问这个文件建立反弹连接
 
 这里选择建立反弹连接
 
 用msf，既可以生成shell，也可以建立反弹连接
-![](https://s3.hedgedoc.org/demo/uploads/4c8470f0-9e86-46f6-a12c-4e8ee90cd700.png)
+
+<img width="543" alt="4c8470f0-9e86-46f6-a12c-4e8ee90cd700" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/b9836e46-a22c-4b9a-85c0-516f42bacb96">
+
 毒液模块生成shell.php
 
 将代码复制到输入框中
 
 msf建立监听
 
-![](https://s3.hedgedoc.org/demo/uploads/e1f381eb-b2e0-4cd2-b870-6f8b46e23dbb.png)
+<img width="498" alt="e1f381eb-b2e0-4cd2-b870-6f8b46e23dbb" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/2ac14e34-19dd-480d-8c3c-2c892fc3e84e">
 
 这个文件路径在./wordpress/wp-content/themes/twentynineteen/secret.php
 
 访问该地址，就能成功建立msf连接
 
-![](https://s3.hedgedoc.org/demo/uploads/4b134b3f-3898-4fe4-9a71-930518b168c9.png)
+<img width="493" alt="4b134b3f-3898-4fe4-9a71-930518b168c9" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/5310d9d7-0159-4227-9618-382016df5fa8">
 
 ### Linux内核漏洞提权
 
@@ -1098,9 +1114,11 @@ msf建立监听
   直接搜索操作系统的漏洞——msf真的很强大
 
 ```
-![](https://s3.hedgedoc.org/demo/uploads/27690b82-f4de-467a-b578-cbed53fe5438.png)
+
+<img width="517" alt="27690b82-f4de-467a-b578-cbed53fe5438" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/516eebc3-420c-4a2a-802c-ccd17e69a63b">
+
 结合内核版本4.10
-![](https://s3.hedgedoc.org/demo/uploads/4a9c4dfc-3a53-4889-acb6-0b172f6ae00a.png)
+<img width="342" alt="4a9c4dfc-3a53-4889-acb6-0b172f6ae00a" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7e72b3a3-7419-4129-9a33-cca2a5536d03">
 
 本地权限提升，searchsploit提供了一个c程序，只需编译成可执行文件，传到目标靶机，执行这个程序，就可以提升权限了
 
@@ -1111,16 +1129,16 @@ meterpreter提供了一个upload命令把攻击机命令传到靶机上
 
 /tmp目录下任何用户都有读写执行权限
 
-![](https://s3.hedgedoc.org/demo/uploads/25c43de7-93da-43be-81e9-4800461d347b.png)
+<img width="315" alt="25c43de7-93da-43be-81e9-4800461d347b" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/4697cce4-7633-48e6-b8dc-96aba591eb30">
 
-![](https://s3.hedgedoc.org/demo/uploads/eb0b6470-9e7c-420c-9f00-87452d10970d.png)
+<img width="540" alt="eb0b6470-9e7c-420c-9f00-87452d10970d" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/b843bc9f-dd6d-4a19-a4fb-e885d03be42b">
 
 需要提升执行权限，此时要进入shell
 
-![](https://s3.hedgedoc.org/demo/uploads/55a21571-c071-43b2-84e4-45a46fbbb747.png)
+<img width="560" alt="55a21571-c071-43b2-84e4-45a46fbbb747" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/e83af932-68e5-4782-91fd-4c28c7f10ef3">
 
-![](https://s3.hedgedoc.org/demo/uploads/e6785750-dd7b-47f8-846c-196fc34d0db2.png)
 
+<img width="667" alt="e6785750-dd7b-47f8-846c-196fc34d0db2" src="https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/3e542373-5071-43d5-9a95-831aaedc896d">
 
 
 # 二、新型渗透攻击技术
@@ -1527,14 +1545,14 @@ WAFW00F工作原理：
 
 3）如果这也不成功，它将分析以前返回的响应，并使用另一个简单的算法来猜测 WAF 或安全解决方案是否正在积极响应我们的攻击
 
-![](https://s3.hedgedoc.org/demo/uploads/c674b424-620b-48db-9221-953aae6d2d39.png)
+![c674b424-620b-48db-9221-953aae6d2d39](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/a9af36f7-5853-4fca-a1f9-96dbf6872212)
 
 
-![](https://s3.hedgedoc.org/demo/uploads/61194c72-69b5-47be-bbd6-1556a920c5fd.png)
+![61194c72-69b5-47be-bbd6-1556a920c5fd](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/576b2220-be02-42d2-ac92-42f8f8fa3d13)
 
 
-![](https://s3.hedgedoc.org/demo/uploads/4167f823-bd4d-4f7b-8213-54453c9dcfcc.png)
 
+![4167f823-bd4d-4f7b-8213-54453c9dcfcc](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/5e8259d3-b139-41ca-9a09-50782ed7c78e)
 
 ### 检测网络服务、绘制网络拓扑
 
@@ -1542,11 +1560,11 @@ WAFW00F工作原理：
 
 开放服务：
 
-![](https://s3.hedgedoc.org/demo/uploads/6eadda68-57d8-4696-b190-4de70f049114.png)
+![6eadda68-57d8-4696-b190-4de70f049114](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/ce4a64d0-f725-48a9-aee5-cfbb27ff647d)
 
 拓扑图：
 
-![](https://s3.hedgedoc.org/demo/uploads/e23d7322-5ae4-4bc1-bc1e-303d9cf50ea8.png)
+![e23d7322-5ae4-4bc1-bc1e-303d9cf50ea8](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/fbe349f0-7494-4650-a6ab-a83bbf38bc99)
 
 
 
@@ -1561,7 +1579,7 @@ IPS的旁路防护原理很简单，其经典代表如开源的Snort，就是在
 
 攻击者嗅探到符合特征的流量后即伪造响应，这里是伪造了HTTP响应（为了篡改页面），如果只是阻断的话就是伪造rst包干扰TCP握手过程或者连接。
 
-![](https://s3.hedgedoc.org/demo/uploads/e194614f-78e8-4dab-a4a5-9216503f8de1.jpg)
+![e194614f-78e8-4dab-a4a5-9216503f8de1](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/eb882ced-907d-42b2-b4bd-60bcf47e460c)
 
 IPS是旁路部署，所以只能通过发伪造包的方式来达到干扰双方正常通信的目的，正常的包其实还是会到达客户端和服务端，只不过相同序号的包操作系统已经处理过了，这些包会被认为是错误的包从而丢掉。
 
@@ -1581,7 +1599,8 @@ IPS是旁路部署，所以只能通过发伪造包的方式来达到干扰双�
 #### TCP分片
 
 一些IPS是字节级逐包检查的，并没有实现TCP分片重组能力，那就把关键字拆到两个TCP包里面就可以。以下是Perl实现的TCP分片HTTP请求，关键字是“www.bad.com”，会拆分到两个TCP包发出。
-![](https://s3.hedgedoc.org/demo/uploads/17d2ef01-08ea-470e-8771-ea170425e2c3.jpg)
+
+![17d2ef01-08ea-470e-8771-ea170425e2c3](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/951b00ed-1063-43b2-bd1e-4d66f0cc9005)
 
 TCP分片绕过，返回了200（如果不实施TCP分片，会返回302）
 
@@ -1639,7 +1658,7 @@ nmap --mtu 16 192.168.213.151
 #### 阻止三次握手的缺陷
 
 客户端发起syn包，IPS冒充服务端给客户端回rst，假装端口关闭，但是实际上端口开放的话服务端的synack包是能到达客户端的，只是同序号rst先到，后到的synack被操作系统丢弃。简单，客户端丢掉伪造的rst包，接受synack包，然后向服务端发ack包建立三次握手，这时候IPS会双向回rst。注意，你的ack包一定比IPS的rst先到服务端并被应用程序执行 —— 我们可以在这个ack包把所有的内容都发了，是一次性盲打，适用于一定场景的漏洞探测和利用。
-![](https://s3.hedgedoc.org/demo/uploads/7db42426-43b3-4bbc-b11f-0900f2f1b12a.jpg)
+![7db42426-43b3-4bbc-b11f-0900f2f1b12a](https://github.com/Tealalal/Enterprise-Network-Architecture-and-Attack-and-Defense/assets/92720453/7aab4621-8b9a-48c4-b520-b94558b5e599)
 
 如果想完美绕过，就得想办法让第二个rst失效；想完美防护，就得让第一个rst生效。
 #### IPv6
@@ -1713,7 +1732,8 @@ foo%5bbar	   foo[bar	foo_bar
 ```
 
 
-![](https://s3.hedgedoc.org/demo/uploads/e8b165f9-02f2-410c-ad52-7f3283515608.jpg)
+![Uploading e8b165f9-02f2-410c-ad52-7f3283515608.jpg…]()
+
 
 parse_str在GET、POST以及cookie上都有应用。如果web服务器可以接受头部字段中带有点或者空格的字段名，那么也会出现这种情况。分3次执行了如上循环，枚举了参数名两端从0到255的所有字符（除下划线外），结果如下：
 
@@ -1761,6 +1781,7 @@ alert http any any -> $HOME_NET any (\
 
 ![](https://s3.hedgedoc.org/demo/uploads/4e913953-3662-4cf0-9990-5c7ea1f96ac9.jpg)
 
+![Uploading 4e913953-3662-4cf0-9990-5c7ea1f96ac9.jpg…]()
 
 可以通过替换下划线的方式，在被检查的参数名中添加null字节或者空格符来绕过针对PHP的Suricata规则。以下是Github上的某个实际规则：
 
